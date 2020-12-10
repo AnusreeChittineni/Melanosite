@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <title>Melanosite:{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="/templates/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color: lightslategray;">
+  <div class="container">
+	<nav class="navbar navbar-expand-md" style="background-color:lightsteelblue;"> 
+    <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+		<div class="collapse navbar-collapse"id="navbar">
+      <div class="navbar-nav" style="text-align: center">
+        <a class="nav-item nav-link" style="font-size:25px; color: white;" href="/"><span>Home</span></a>
+        <a class="nav-item nav-link" style="font-size:25px; color: white;" href="/form"><span>Form</span></a>
+      </div>
+    </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <main class="container-fluid p-5">
+            {% block main %}{% endblock %}
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "layout.html" %} 
+
+{% block title %} 
+    Form 
+{% endblock %} 
+
+{% block main %}
+<h2 style="font-size: 54px; color: white; text-align: center; background-color: lightsteelblue; margin-bottom: 5%;"> vv Submit File Below vv </h2>
+<div style=" background-color: lightsteelblue; height: 50px; margin-left: 10%; margin-right: 10%; width: 80%; align-items: center; align-content: center; justify-content: center; ">
+  <form method="post" action="/form" name="userimg">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form>
+</div>
+<text style="font-size: 16px; margin-top: 5%; text-align: center; color: white;"> <p>~~AIHacks II~~ </p></text>
+
+
+
+{% endblock %}
